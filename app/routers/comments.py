@@ -11,5 +11,5 @@ router = APIRouter(
 
 
 @router.post('/')
-async def check_toxicity(toxicity_check: Annotated[dict, Depends(check_toxicity)]):
+async def check_toxic_comment(toxicity_check: Annotated[dict, Depends(check_toxicity)]):
     return toxicity_check
